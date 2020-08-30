@@ -1,0 +1,55 @@
+{% extends "BogiBlog/base.html" %}
+{% block content %}
+
+          <a href="/contact"><i class="fa fa-fw fa-phone"></i>Contact</a>
+          <a href="/"><i class="fa fa-fw fa-home"></i>Home</a> 
+        </div>
+
+    <!-- Left Column -->
+    <div class="snjv-third snjv-margin-top">
+    
+      <div class="snjv-white snjv-text-grey snjv-card-4">
+        <div class="snjv-display-container" >
+          <img src="{{ user.profile.image.url }}" style="width:100% ; border-radius: 50%;" alt="profile_pic" height="300" class=" snjv-margin-bottom snjv-margin-top">
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="snjv-twothird snjv-margin-top">
+    
+      <div class="snjv-container snjv-card snjv-white snjv-margin-bottom">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}    
+            <h2 class="h2">Update details:-></h2>
+            <p><b>Full Name</b></p>
+            {{ u_form.username }}
+            <p><b>Enter E-Mail</b></p>
+            {{ u_form.email}}
+            <p><b>Chose image for update</b></p>
+            {{ p_form.image }}
+
+
+            <button type="submit" style="cursor: pointer;" >Update</button>
+        
+            <div class="snjv-text-red snjv-small">
+                {{ form.errors }}
+            </div>
+        </form>
+        <br>
+      </div>
+      
+
+    <!-- End Right Column -->
+    </div>
+       
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="snjv-container snjv-teal snjv-center snjv-margin-top snjv-bottom">
+{% endblock %}
