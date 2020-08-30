@@ -1,0 +1,51 @@
+{% extends "BogiBlog/base.html" %}
+{% block content %}
+
+          <a href="/contact"><i class="fa fa-fw fa-phone"></i>Contact</a>
+          <a href="/"><i class="fa fa-fw fa-home"></i>Home</a> 
+        </div>
+
+        <div class="snjv-login snjv-white snjv-text-black snjv-card-4">
+
+              {% load static %}
+              <img src="{% static 'BogiBlog/logo.png' %}" alt="logo" class = "user">
+            <!-- Messages for successful login or login errors --> 
+              {% if messages %}
+                {% for message in messages %}  
+                  <div class="snjv-success snjv-card snjv-light-grey snjv-margin-bottom">
+                    <div class="snjv-container">{{message}}</div>
+                  </div> 
+                {% endfor %}
+              {% endif %}
+   
+          <form method="POST">
+            {% csrf_token %}
+
+              <h2 class="h2">Login Here</h2>
+              <p><b>Username</b></p>
+              <input type="text" placeholder="Enter Email/Username" name="username">
+          
+              <p><b>Password</b></p>
+              <input type="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z]).{8,}" name="password">
+              <li class="snjv-small">Password must contain 8 characters including 1 numeric, 1 uppercase and 1 lowercase letter</li>
+              <button type="submit" style="cursor: pointer;" >Log In</button>
+              <button type="button" class="cancelbtn" style="cursor: pointer;">Cancel</button>
+              <span class="psw" ><a href="#" class="snjv-text-blue-gray" style="cursor: pointer;">Forget Password?</a></span>
+
+          </form>
+
+
+              <hr class="snjv-border-black">
+              <p>Need an Account?... <a href="/register" class="snjv-text-blue-grey" style="cursor: pointer;">Sign Up</a> </p>
+        </div>
+      
+   
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="snjv-container snjv-teal snjv-center snjv-margin-top snjv-bottom">
+{% endblock  %}

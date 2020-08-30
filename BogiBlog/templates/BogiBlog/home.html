@@ -1,0 +1,242 @@
+{% extends "BogiBlog/base.html" %}
+{% block content %}
+        
+          <a href="/contact"><i class="fa fa-fw fa-phone"></i>Contact</a>
+        <a class="active" href="/"><i class="fa fa-fw fa-home"></i>Home</a> 
+      </div>
+
+     <!-- Slide show -->
+     <div class="content snjv-display-container Slide snjv-margin-top">
+        {% load static %} 
+        <img class="mySlides" src="{% static 'BogiBlog/Python1.png' %}" style="width:100%">
+        {% load static %}
+        <img class="mySlides" src="{% static 'BogiBlog/java.jpg' %}" style="width:100%">
+        {% load static %}
+        <img class="mySlides" src="{% static 'BogiBlog/javascript.jpeg' %}" style="width:100%">
+        {% load static %}
+        <img class="mySlides" src="{% static 'BogiBlog/c.png' %}"style="width:100%">
+        {% load static %}
+        <img class="mySlides" src="{% static 'BogiBlog/html.jpg' %}" style="width:100%">
+        <div class="snjv-center snjv-display-bottommiddle" style="width:100%">
+          <div type= "arrow" class="snjv-left snjv-padding" onclick="plusDivs(-1)">&#10094;</div>
+          <div type= "arrow" class="snjv-right snjv-padding" onclick="plusDivs(1)">&#10095;</div>
+          <span class="snjv-badge demo snjv-border " onclick="currentDiv(1)"></span>
+          <span class="snjv-badge demo snjv-border " onclick="currentDiv(2)"></span>
+          <span class="snjv-badge demo snjv-border" onclick="currentDiv(3)"></span>
+          <span class="snjv-badge demo snjv-border" onclick="currentDiv(4)"></span>
+          <span class="snjv-badge demo snjv-border " onclick="currentDiv(5)"></span>
+        </div>
+      </div>
+
+
+<!-- Left Column -->
+<div class=" snjv-third snjv-margin-top">
+<div class="snjv-white snjv-text-grey snjv-card-4">
+  <div class="snjv-display-container">
+    {% load static %}
+    <img src="{% static 'BogiBlog/logo.png' %}" alt="logo" style="width:100%" height="300">
+    <img src="{% static 'BogiBlog/appname.png' %}" alt="logo" style="width:100%"> 
+  </div>
+
+<!-- Content part -->
+<div class="snjv-container">
+  <h3>Content</h3>
+  <ul class=" snjv-ul snjv-hoverable snjv-margin-bottom ">
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-python-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>PYTHON</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-css3-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>CSS</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-html5-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>HTML</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-mysql-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>MySQL</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-javascript-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>JavaScript</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-cplusplus-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>C++</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-c-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>C</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-java-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>JAVA</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "fa fa-video-camera fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>Video Editing</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-illustrator-plain fa-fw snjv-margin-right snjv-large snjv-text-teal"></i>Logo Design</li></a>
+    <a href="#" style="text-decoration: none;"><li><i class= "devicon-photoshop-plain fa-fw snjv-margin-right snjv-large snjv-text-teal "></i>PhotoShop</li></a>
+  </ul>
+</div>
+</div>
+<!-- End Left Column -->
+</div>
+
+<!-- Right Column -->
+<div class="snjv-twothird snjv-margin-top">
+
+<div class="snjv-main snjv-margin-bottom" id="main">
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+    <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+      <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-python-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>PYTHON</h1>
+      <p>Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes.</p>   
+    </div>
+    <div class="snjv-col s6 snjv-padding-16 column" style="padding-left: 5px;">
+      <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+      {% load static %}
+      <img src="{% static 'BogiBlog/python_snipit.PNG' %}" alt="py" class="snjv-center">
+    </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/css_snipit.PNG' %}" alt="py">
+  </div>
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-css3-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>CSS</h1>
+    <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is, with a simple syntax example, and also covers some key terms about the language.</p>
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-html5-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>HTML</h1>
+    <p>HTML stands for Hypertext Markup Language. It allows the user to create and make structure a proper for sections, paragraphs, headings, links, and blockquotes for web pages and applications.</p>
+  </div>
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;" height>
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/html_snipit.PNG' %}" alt="py" >
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/sql_snipit.PNG' %}" alt="py" >
+  </div>
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-mysql-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>MySQL</h1>
+    <p>SQL is Structured Query Language, which is a computer language for storing, manipulating and retrieving data stored in a relational database.</p>
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-javascript-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>JavaScript</h1>
+    <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages like displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc.</p>
+  </div>
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/javascript_snipit.PNG' %}" alt="py" >
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/cpp_snipit.PNG' %}" alt="py" class="snjv-card">
+  </div>
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-cplusplus-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>C++</h1>
+    <p>C++ is a powerful general-purpose programming language. It can be used to develop operating systems, browsers, games, and so on. C++ supports different ways of programming like procedural, object-oriented, functional, and so on.</p>
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-c-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>C</h1>
+    <p>C is a general-purpose programming language that is extremely popular, simple and flexible. It is machine-independent, structured programming language which is used extensively in various applications.</p>
+  </div>
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/c_snipit.PNG' %}" alt="py" >
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/java_snipit.PNG' %}" alt="py" class="snjv-card">
+  </div>
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-java-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>JAVA</h1>
+    <p>Java is a powerful general-purpose programming language. It is used to develop desktop and mobile applications, big data processing, embedded systems, and so on. JAVA is owned by Oracle company</p>
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "fa fa-video-camera fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>Video Editing</h1>
+    <p>Video editing is the process of manipulation and arrangement of video shots to create a new work. Editing is usually considered to be an important part of the post production process — other post-production tasks include titling, colour correction, sound mixing, etc</p>
+  </div>
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/app_snipits.jpg' %}" alt="py" class="snjv-card">
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/illus_snipits.jpg' %}" alt="py" class="snjv-card">
+  </div>
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-illustrator-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal"></i>Logo Design</h1>
+    <p>A Logo is a design symbolizing ones organization. It is a design that is used by an organization for its letterhead, advertising material, and signs as an emblem by which the organization can easily be recognized, also called logotype.</p>
+  </div>
+</div>
+
+<div class="snjv-row snjv-white snjv-margin-bottom snjv-card-2">
+  <div class="snjv-col s6 snjv-center " style="padding: 3%;">
+    <h1 class="snjv-text-grey snjv-padding-16 snjv-center"><i class= "devicon-photoshop-plain fa-fw snjv-margin-right snjv-xxlarge snjv-text-teal "></i>PhotoShop</h1>
+    <p>Image editing encompasses the processes of altering images, whether they are digital photographs, traditional photo-chemical photographs, or illustrations on various software like Adobe PhotoShop that we gonna learn in this.</p>
+  </div>
+  <div class="snjv-col s6 snjv-padding-32 column" style="padding-left: 5px;">
+    <h2 class="snjv-text-grey" style="font-size: 2.5vw;">Example:-</h2>
+    {% load static %}
+    <img src="{% static 'BogiBlog/ps_snipits.jpg' %}" alt="py" class="snjv-card">
+  </div>
+</div>
+
+
+</div>
+
+<!-- End Right Column -->
+</div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" snjv-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " snjv-white";
+  }
+  </script>
+
+
+<!-- End Grid -->
+</div>
+
+<!-- End Page Container -->
+</div>
+
+<footer class="snjv-container snjv-teal snjv-center snjv-margin-top">
+{% endblock %}
